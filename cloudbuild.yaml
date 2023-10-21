@@ -11,5 +11,5 @@ steps:
   - --filename = gke.yaml
   - --image = gcr.io/$PROJECT_ID/devops-1
   - --location = us-central1-c
-  - --cludter = cluster-1
+  - --cluster = cluster-1
   - --namespace = devops
