@@ -13,10 +13,10 @@ spec:
        app: gcp
     spec:
        containers:
-         - name: acp-devops-qke 
+         - name: gcp-devops-qke 
           image: gcr.io/devops-1/devops-1:latest 
           ports:
-             - containerPort: 5000
+          - containerPort: 5000
           env:
            - name: PORT 
              value: "5000"
