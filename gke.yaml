@@ -6,17 +6,17 @@ spec:
  replicas: 1
  selector:
    matchLabels:
-     app: gcp
+      app: gcp
  template:
    metadata:
      labels:
        app: gcp
     spec:
-       containers:
-         - name: gcp-devops-qke 
-          image: gcr.io/devops-1/devops-1:latest 
-          ports:
-          - containerPort: 5000
-          env:
-           - name: PORT 
-             value: "5000"
+      containers:
+      - name: gcp-devops-qke 
+        image: gcr.io/devops-1/devops-1:latest 
+        ports:
+        - containerPort: 5000
+        env:
+         - name: PORT 
+           value: "5000"
