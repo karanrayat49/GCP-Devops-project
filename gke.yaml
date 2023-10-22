@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: gcp-devops-qke
-        image: gcr.io/devops-1-402605/devops-1:latest
+        image: gcr.io/devops-1-402605/devops-dev:latest
         ports:
         - containerPort: 5000
         env:
@@ -26,7 +26,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: gcp-devops-gke-service
-  namespace: devops
+  namespace: devops-development
   labels:
     app: gcp
     kubernetes.io/managed-by: gcp-cloud-build-deploy
