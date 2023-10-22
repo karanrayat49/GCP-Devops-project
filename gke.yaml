@@ -2,16 +2,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gcp-devops-gke-dev
-  namespace: development
+  namespace: devops-development
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gcp
+      app: gcp-dev
   template:
     metadata:
       labels:
-        app: gcp
+        app: gcp-dev
     spec:
       containers:
       - name: gcp-devops-qke
